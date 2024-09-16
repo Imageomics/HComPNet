@@ -1,3 +1,3 @@
-# Phylo-Diffusion Website
+# HComP-Net Website
 
-This branch contains the official website code for Phylo-Diffusion
+This branch contains the official website code for HComP-Net
