@@ -22,7 +22,7 @@
           <p><a href="https://imageomics.github.io/bioclip/">BioCLIP</a></p>
           <p><a href="https://github.com/Imageomics/INTR">INTR</a></p>
           <p><a href="https://imageomics.github.io/phylo-diffusion/">Phylo-Diffusion/a></p>
-            <p><a href="https://github.com/elhamod/phylonn">PhyloNN/a></p>
+          <p><a href="https://github.com/elhamod/phylonn">PhyloNN/a></p>
         </div>
       </details>
     </div>
@@ -77,7 +77,7 @@
     <figure>
       <img srcset="" src="images/new_teaser_5/new_teaser_5-1.png" alt="" loading="lazy">
       <figcaption>
-        Figure 1: Sample images of bird species with zoomed-in views of learned prototypes <b>HComP-Net</b> along with their associated score maps. We consider the problem of finding evolutionary traits common to a group of species derived from the same ancestor (<span style="color:blue;">(blue)</span>) that are absent in the contrasting set of species from a different ancestor (<span style="color:red;">(red)</span>). We can infer that descendants of the blue node share a common trait: <em>long tail</em>, absent from descendants of the red node.
+        Figure 1: Sample images of bird species with zoomed-in views of learned prototypes <b>HComP-Net</b> along with their associated score maps. We consider the problem of finding evolutionary traits common to a group of species derived from the same ancestor (<span style="color:blue;">blue</span>) that are absent in the contrasting set of species from a different ancestor (<span style="color:red;">red</span>). We can infer that descendants of the blue node share a common trait: <em>long tail</em>, absent from descendants of the red node.
       </figcaption>
     </figure>
 
@@ -107,24 +107,16 @@
       </ol> -->
     </p>
 
-    <figure style="text-align: center;">
-      <!-- <div style="display: flex; justify-content: space-around; align-items: flex-start;">
-        <figure style="margin: 0 10px;">
-          <img src="images/trait_masking.jpg" alt="" loading="lazy" style="height: 300px; width: auto;">
-          <figcaption>
-            (a) Trait Masking
-          </figcaption>
-        </figure>
-        
-        <figure style="margin: 0 10px;">
-          <img src="images/trait_swapping.jpg" alt="" loading="lazy" style="height: 300px; width: auto;">
-          <figcaption>
-            (b) Trait Swapping
-          </figcaption>
-        </figure>
-      </div> -->
+    <!-- <figure style="text-align: center;">
       <img src="images/architecture/architecture-1.png" alt="" loading="lazy" style="height: 300px; width: auto;">
       <figcaption style="margin-top: 10px;">
+        Figure 2: Schematic illustration of HComP-Net model architecture.
+      </figcaption>
+    </figure> -->
+
+    <figure>
+      <img srcset="" src="images/architecture/architecture-1.png" alt="" loading="lazy">
+      <figcaption>
         Figure 2: Schematic illustration of HComP-Net model architecture.
       </figcaption>
     </figure>
@@ -141,159 +133,151 @@
       We evaluate Phylo-Diffusion and show that it achieves high-fidelity at par with the text-to-image and class-conditional diffusion models.
     </p>
 
-    <h4>Phylo-Diffusion performs at par with state-of-the-art generative models</h4>
-    <p><i>Scroll to see all results.</i></p>
+    <h3>Classification Performance of HComP-Net</h3>
+    <!-- <p><i>Scroll to see all results.</i></p> -->
 
-    <table>
+    <table style="border-collapse: collapse; width: 100%;">
+      <caption>% Accuracy</caption>
       <thead>
-        <tr>
-          <th>Model Type</th>
-          <th>Method</th>
-          <th>FID &darr;</th>
-          <th>IS &uarr;</th>
-          <th>Prec. &uarr;</th>
-          <th>Recall &uarr;</th>
+        <tr style="border-bottom: 2px solid black;">
+          <th style="text-align: left; padding: 8px;">Model</th>
+          <th style="text-align: center; padding: 8px;">Hierarchy</th>
+          <th style="text-align: center; padding: 8px;">Bird</th>
+          <th style="text-align: center; padding: 8px;">Butterfly</th>
+          <th style="text-align: center; padding: 8px;">Fish</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>GAN</td>
-          <td>Phylo-NN</td>
-          <td>28.08</td>
-          <td>2.35</td>
-          <td>0.625</td>
-          <td>0.084</td>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">ResNet-50</td>
+          <td style="text-align: center; padding: 8px;" rowspan="2">No</td>
+          <td style="text-align: center; padding: 8px; font-weight: bold;">74.18</td>
+          <td style="text-align: center; padding: 8px;">95.76</td>
+          <td style="text-align: center; padding: 8px;">86.63</td>
         </tr>
-        <tr>
-          <td>Diffusion</td>
-          <td>Class Conditional</td>
-          <td>11.46</td>
-          <td>2.47</td>
-          <td>0.679</td>
-          <td>0.359</td>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">INTR</td>
+          <td style="text-align: center; padding: 8px;">69.22</td>
+          <td style="text-align: center; padding: 8px;">95.53</td>
+          <td style="text-align: center; padding: 8px;">86.73</td>
         </tr>
-        <tr>
-          <td>Diffusion</td>
-          <td>Scientific Name</td>
-          <td>11.76</td>
-          <td>2.43</td>
-          <td>0.683</td>
-          <td>0.332</td>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">HPnet</td>
+          <td style="text-align: center; padding: 8px;" rowspan="2">Yes</td>
+          <td style="text-align: center; padding: 8px;">36.18</td>
+          <td style="text-align: center; padding: 8px;">94.69</td>
+          <td style="text-align: center; padding: 8px;">77.51</td>
         </tr>
-        <tr>
-          <td>Diffusion</td>
-          <td>Phylo-Diffusion (ours)</td>
-          <td>11.38</td>
-          <td>2.53</td>
-          <td>0.654</td>
-          <td>0.367</td>
+        <tr style="border-bottom: 2px solid black;">
+          <td style="text-align: left; padding: 8px;">HComP-Net</td>
+          <td style="text-align: center; padding: 8px;">70.01</td>
+          <td style="text-align: center; padding: 8px; font-weight: bold;">97.35</td>
+          <td style="text-align: center; padding: 8px; font-weight: bold;">90.80</td>
         </tr>
       </tbody>
-      </table>
+    </table>
 
-    <h3>Trait Masking</h3>
+    <h3>Semantic Quality of Prototypes</h3>
+
+    <table style="border-collapse: collapse; width: 100%;">
+      <caption>Part purity of prototypes on <strong>Bird</strong> dataset.</caption>
+      <thead>
+        <tr style="border-bottom: 2px solid black;">
+          <th style="text-align: left; padding: 8px;">Model</th>
+          <th style="text-align: center; padding: 8px;">L<sub>ovsp</sub></th>
+          <th style="text-align: center; padding: 8px;">Masking</th>
+          <th style="text-align: center; padding: 8px;">Part purity</th>
+          <th style="text-align: center; padding: 8px;">% masked</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">HPnet</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+          <td style="text-align: center; padding: 8px;">0.14 ± 0.09</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">HComP-Net/td>
+          <td style="text-align: center; padding: 8px;">-</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+          <td style="text-align: center; padding: 8px;">0.68 ± 0.22</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">HComP-Net/td>
+          <td style="text-align: center; padding: 8px;">-</td>
+          <td style="text-align: center; padding: 8px;">✓</td>
+          <td style="text-align: center; padding: 8px;">0.75 ± 0.17</td>
+          <td style="text-align: center; padding: 8px;">21.42%</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td style="text-align: left; padding: 8px;">HComP-Net/td>
+          <td style="text-align: center; padding: 8px;">✓</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+          <td style="text-align: center; padding: 8px;">0.72 ± 0.19</td>
+          <td style="text-align: center; padding: 8px;">-</td>
+        </tr>
+        <tr style="border-bottom: 2px solid black;">
+          <td style="text-align: left; padding: 8px;">HComP-Net/td>
+          <td style="text-align: center; padding: 8px;">✓</td>
+          <td style="text-align: center; padding: 8px;">✓</td>
+          <td style="text-align: center; padding: 8px;"><strong>0.77 ± 0.16</strong></td>
+          <td style="text-align: center; padding: 8px;">16.53%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Prototype Visualizations</h3>
 
     <figure>
-
-      <img srcset="" src="images/level3-lepomis.jpg" alt="" loading="lazy">
+      <img srcset="" src="images/Birds_and_Fish-Tree_proto_viz_horizontal_2.png" alt="" loading="lazy">
       <figcaption>
-        Figure 3: Probability activations for <i>Lepomis</i> species at level 3 for Trait Masking. 
-        The species highlighted in green represent the species belonging to that subtree at the given level
+        Figure 3: Visualizing the hierarchy of prototypes discovered by HComP-Net for birds and fishes. *Note that the textual descriptions of the hypothesized traits shown for every prototype are based on human interpretation.
       </figcaption>
     </figure>
-    
-    <h3>Trait Swapping</h3>
 
-    Figure 4 illustrates trait swapping for the source species <i>Noturus exilis</i> (left), where the
-    information at Level-2 is swapped with that of a sibling subtree at Node B
-    (right). The image in the center is generated using the trait swapped embedding.
-    This visualization of the perturbed species helps us study the trait changes that
-    would have branched out at level-2 between Node A and Node B.In the generated
-    image (center), we observe the absence of barbels(whiskers), and the caudal fin
-    (tail) is getting forked (or split) highlighted in pink, which are traits adopted
-    from species in the subtree at B (<i>Notropis</i>). Whereas other fins like the dorsal,
-    pelvic, and anal fin still resemble the source species <i>Noturus exilis</i> highlighted
-    in green. The same is also reflected in the change of probability distribution
-    after perturbations; the probability distribution of source species <i>Noturus exilis</i>
-    decreases and the probability of it being a <i>Notropis</i> increases slightly.
-
-    <figure>
-      <img srcset="" src="images/trait_swapping_example.jpg" alt="" loading="lazy">
+    <figure></figure>
+      <img srcset="" src="images/ProtoTimeline.png" alt="" loading="lazy">
       <figcaption>
-        Figure 4: Visualization of changes in traits after swapping information at Level 2 (Node A) 
-        for <i>Noturus exilis</i> (left) with its sibling subtree at Node B(right) to generate perturbed species (center). 
-        Traits shared with the source species are outlined in green, whereas those shared with the sibling subtree 
-        at Node B are outlined in pink.
-      </figcaption>
-    </figure>
-    
-
-
-    <h2 id="comparision" class="banded">Comparision to PhyloNN</h2>
-
-
-    <figure>
-      <img srcset="" src="images/phylo_nn_compare_2.jpg" alt="" loading="lazy">
-      <figcaption>
-        Figure 5: Comparing Phylo-NN with Phylo-Diffusion for trait swapping
+        Figure 4: We trace the prototypes learned for Western Grebe at three different levels in the phylogenetic tree (corresponding to different periods of time in evolution). Text in blue is the interpretation of common traits of descendants found by HComP-Net at every ancestor node of Western Grebe.
       </figcaption>
     </figure>
 
-    <!-- <p>
-      Why does BioCLIP work so well?
-      We conduct an intrinsic evaluation to understand the representations learned by BioCLIP.
-      We visualize BioCLIP and CLIP's representations for the 100K unseen images in the iNat21 validation set, using T-SNE to plot them in two-dimensions, coloring the points based on their class.
-      In the figure below, (B) means <b>B</b>ioCLIP and (O) means <b>O</b>penAI's CLIP.
-    </p>
-    <p>
-      At higher ranks like phylum, both CLIP and BioCLIP have good separation, but you can see that BioCLIP's representation is more fine-grained and contains a richer clustering structure.
-      At lower ranks, BioCLIP produces far more separable features, while CLIP's features tend to be cluttered and lack a clear structure.
-      This shows that BioCLIP has learned a rich feature representation following the hierarchical structure of the taxonomy, which helps explain its strong generalization across the tree of life.
-    </p>
-    <figure>
-      <a href="files/intrinsic.pdf">
-        <img srcset="" src="images/intrinsic_small.png" alt="" loading="lazy">
-      </a>
+    <figure></figure>
+      <img srcset="" src="images/Butterfly30-Tree_proto_viz_3/Butterfly30-Tree_proto_viz_3-1.png" alt="" loading="lazy">
       <figcaption>
-        We show that <b>(B)</b>ioCLIP's representations are more fine-grained and contain a richer clustering structure than <b>(O)</b>penAI's CLIP.
-        Click on the image to see the full resolution PDF, or check out our <a href="https://arxiv.org/abs/2311.18803">paper</a> for more details.
+        Figure 5: Visualizing the hierarchy of prototypes discovered by \proposed{} over three levels in the phylogeny of seven species from Butterfly dataset. For each prototype, we visualize one image from each of its leaf descendants.
       </figcaption>
-    </figure> -->
-
-    <!-- <h2 class="banded" id="dataset">Dataset</h2>
-    <p>
-      TreeOfLife-10M is the largest and most diverse available dataset of biology images.
-      We combine images from three sources, iNaturalist, BIOSCAN-1M, and Encyclopedia of Life (<a href="https://eol.org">EOL</a>, accessed 29 July 2023), to create a dataset of
-      10M images, spanning 450K+ species.
-      We train BioCLIP on TreeOfLife-10M and release the weights for public use.
-    </p> -->
-
+    </figure>
+  
 
 
     <h2 class="banded">References</h2>
     <p>Please cite our paper if you use our code, data, model or results.</p>
     <pre class="reference">
-      @article{khurana2024hierarchical,
-        title={Hierarchical Conditioning of Diffusion Models Using Tree-of-Life for Studying Species Evolution},
-        author={Khurana, Mridul and Daw, Arka and Maruf, M and Uyeda, Josef C and Dahdul, Wasila and Charpentier, Caleb and Bak{\i}{\c{s}}, Yasin and Bart Jr, Henry L and Mabee, Paula M and Lapp, Hilmar and others},
-        journal={arXiv preprint arXiv:2408.00160},
+      @article{manogaran2024you,
+        title={What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits},
+        author={Manogaran, Harish Babu and Maruf, M and Daw, Arka and Mehrab, Kazi Sajeed and Charpentier, Caleb Patrick and Uyeda, Josef C and Dahdul, Wasila and Thompson, Matthew J and Campolongo, Elizabeth G and Provost, Kaiya L and others},
+        journal={arXiv preprint arXiv:2409.02335},
         year={2024}
       }
     </pre>
 
-    <p>Also consider citing LDM:</p>
+    <!-- <p>Also consider citing LDM:</p>
     <pre class="reference">@inproceedings{rombach2022high,
       title={High-resolution image synthesis with latent diffusion models},
       author={Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj{\"o}rn},
       booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
       pages={10684--10695},
       year={2022}
-    }</pre>
+    }</pre> -->
 
 
     <h2 class="banded">Acknowledgements</h2>
     <p>
-      This work was supported by the <a href="https://imageomics.org">Imageomics Institute</a>, which is funded by the US National Science Foundation's Harnessing the Data Revolution (HDR) program under <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240">Award #2118240</a> (Imageomics: A New Frontier of Biological Information Powered by Knowledge-Guided Machine Learning). Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+      This research is supported by National Science Foundation (NSF) awards for the HDR Imageomics Institute (OAC-<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240">Award #2118240</a>) <a href="https://imageomics.org">Imageomics Institute</a>. We are thankful for the support of computational resources provided by the Advanced Research Computing (ARC) Center at Virginia Tech. This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The US government retains, and the publisher, by accepting the article for publication, acknowledges that the US government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this manuscript or allow others to do so for US government purposes. DOE will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan (<a href="https://www.energy.gov/doe-public-access-plan">https://www.energy.gov/doe-public-access-plan</a>).
     </p>
   </main>
   <script>
