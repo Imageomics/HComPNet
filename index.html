@@ -89,13 +89,13 @@
       In order to discover evolutionary traits through prototypes, our approach features the following,
 
       <ul>
-        <li><b>Hierarchical Prototypes</b> We learn prototypes at each internal node of the phylogeny such that each prototype captures a evolutionary trait of the species that are leaf descendants of the node.</li>
-        <li><b>Avoiding Over-specificity</b>Over-specific prototypes represents traits that are specific to one or few of the leaf descendant species, rather than representing a common shared trait. In order to avoid over-specificity.</li>
+        <li><b>Hierarchical Prototypes:</b> We learn prototypes at each internal node of the phylogeny such that each prototype captures a evolutionary trait of the species that are leaf descendants of the node.</li>
+        <li><b>Avoiding Over-specificity:</b> Over-specific prototypes represents traits that are specific to one or few of the leaf descendant species, rather than representing a common shared trait. In order to avoid over-specificity.</li>
               <ol>
                 <li>We introduce a novel <em>over-specificity loss</em> that enforces each prototype to represent a common trait of all leaf descendants.</li>
                 <li>We introduce <em>masking module</em> that helps to idenitfy and discard over-specific prototypes that are learned by the model.</li>
               </ol>
-        <li><b>Learning Discriminative Traits</b> We introduce <em>discriminative loss</em> to ensure the prototypes represent traits that are absent in the contrasting set of species that have evolved from a different ancestor.</li>
+        <li><b>Learning Discriminative Traits:</b> We introduce <em>discriminative loss</em> to ensure the prototypes represent traits that are absent in the contrasting set of species that have evolved from a different ancestor.</li>
       </ul>
 
       In addition, we also adopt self-supervised learning of prototypes over the hierarchy to ensure the prototypes are semantically consistent, such that they always represent the same visual concept in different images.
