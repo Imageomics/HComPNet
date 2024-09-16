@@ -100,19 +100,7 @@
 
       In addition, we also adopt self-supervised learning of prototypes over the hierarchy to ensure the prototypes are semantically consistent, such that they always represent the same visual concept in different images.
 
-      <!-- We leverage this new modality and introduce two experiments for understanding evolutionary traits inspired by gene-knockout experiments:
-      <ol>
-        <li><b>Trait Masking:</b>  where we mask out one or more level embedding by substituting it with gaussian noise to verify that the embeddings learned capture hierarchical information.</li>
-        <li><b>Trait Swapping:</b> which involves substitution of level-l embedding of a source species with the level-l embedding of a sibling subtree at an equivalent level to visualize the trait differences in the generated images before and after trait swapping that can help us understand the evolutionary traits that branched at a certain level.</li>
-      </ol> -->
     </p>
-
-    <!-- <figure style="text-align: center;">
-      <img src="images/architecture/architecture-1.png" alt="" loading="lazy" style="height: 300px; width: auto;">
-      <figcaption style="margin-top: 10px;">
-        Figure 2: Schematic illustration of HComP-Net model architecture.
-      </figcaption>
-    </figure> -->
 
     <figure style="text-align: center;">
       <img srcset="" src="images/architecture/architecture-1.png" alt="" loading="lazy">
@@ -128,10 +116,10 @@
     <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.36.1/gradio.js"></script>
     <gradio-app src="https://mridulk-hier-embed.hf.space/"></gradio-app> -->
 
-    <h2 class="banded" id="evaluation">Experiments</h2>
-    <p>
+    <h2 class="banded" id="evaluation">Results</h2>
+    <!-- <p>
       We evaluate Phylo-Diffusion and show that it achieves high-fidelity at par with the text-to-image and class-conditional diffusion models.
-    </p>
+    </p> -->
 
     <h3>Classification Performance of HComP-Net</h3>
     <!-- <p><i>Scroll to see all results.</i></p> -->
@@ -248,7 +236,7 @@
     <figure style="text-align: center;">
       <img srcset="" src="images/Butterfly30-Tree_proto_viz_3/Butterfly30-Tree_proto_viz_3-1.png" alt="" loading="lazy" style="max-width: 100%; display: block; margin: 0 auto;">
       <figcaption>
-        Figure 5: Visualizing the hierarchy of prototypes discovered by \proposed{} over three levels in the phylogeny of seven species from Butterfly dataset. For each prototype, we visualize one image from each of its leaf descendants.
+        Figure 5: Visualizing the hierarchy of prototypes discovered by HComP-Net over three levels in the phylogeny of seven species from Butterfly dataset. For each prototype, we visualize one image from each of its leaf descendants.
       </figcaption>
     </figure>
   
@@ -277,7 +265,7 @@
 
     <h2 class="banded">Acknowledgements</h2>
     <p>
-      This research is supported by National Science Foundation (NSF) awards for the HDR Imageomics Institute (OAC-<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240">Award #2118240</a>) <a href="https://imageomics.org">Imageomics Institute</a>. We are thankful for the support of computational resources provided by the Advanced Research Computing (ARC) Center at Virginia Tech. This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The US government retains, and the publisher, by accepting the article for publication, acknowledges that the US government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this manuscript or allow others to do so for US government purposes. DOE will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan (<a href="https://www.energy.gov/doe-public-access-plan">https://www.energy.gov/doe-public-access-plan</a>).
+      This research is supported by National Science Foundation (NSF) awards for the HDR <a href="https://imageomics.org">Imageomics Institute</a> (OAC-<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2118240">Award #2118240</a>). We are thankful for the support of computational resources provided by the Advanced Research Computing (ARC) Center at Virginia Tech. This manuscript has been authored by UT-Battelle, LLC, under contract DE-AC05-00OR22725 with the US Department of Energy (DOE). The US government retains, and the publisher, by accepting the article for publication, acknowledges that the US government retains a nonexclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of this manuscript or allow others to do so for US government purposes. DOE will provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan (<a href="https://www.energy.gov/doe-public-access-plan">https://www.energy.gov/doe-public-access-plan</a>).
     </p>
   </main>
   <script>
