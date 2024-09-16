@@ -21,8 +21,8 @@
         <div class="options">
           <p><a href="https://imageomics.github.io/bioclip/">BioCLIP</a></p>
           <p><a href="https://github.com/Imageomics/INTR">INTR</a></p>
-          <p><a href="https://imageomics.github.io/phylo-diffusion/">Phylo-Diffusion/a></p>
-          <p><a href="https://github.com/elhamod/phylonn">PhyloNN/a></p>
+          <p><a href="https://imageomics.github.io/phylo-diffusion/">Phylo-Diffusion</a></p>
+          <p><a href="https://github.com/elhamod/phylonn">PhyloNN</a></p>
         </div>
       </details>
     </div>
@@ -123,7 +123,8 @@
 
     <h3>Classification Performance of HComP-Net</h3>
     <!-- <p><i>Scroll to see all results.</i></p> -->
-
+    <p>The comparison of the fine-grained accuracy calculated for HComP-Net and the baselines on Bird, Fish, and Butterfly datasets are given below</p>
+    
     <table style="border-collapse: collapse; margin-left: auto; margin-right: auto;">
       <caption>% Accuracy</caption>
       <thead>
@@ -166,7 +167,8 @@
     </table>
 
     <h3>Semantic Quality of Prototypes</h3>
-
+    <p>We calculate the semantic quality of each prototype by means of part purity on Bird dataset. Prototypes that represent the same part (eye, beak, tail, etc.) in Top-10 closest images have part purity close to 1. We report the mean and standard deviation of the part purity of all the prototypes learned. % masked denotes the percentage of prototypes that were identified as over-specific and removed using masking module.</p>
+    
     <table style="border-collapse: collapse; margin-left: auto; margin-right: auto;">
       <caption>Part purity of prototypes on Bird dataset.</caption>
       <thead>
@@ -240,8 +242,6 @@
       </figcaption>
     </figure>
   
-
-
     <h2 class="banded">References</h2>
     <p>Please cite our paper if you use our code, data, model or results.</p>
     <pre class="reference">
