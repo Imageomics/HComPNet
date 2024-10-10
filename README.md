@@ -1,7 +1,8 @@
-# HComP-Net: Hierarchy aligned Commonality through Prototypical Networks
-This repository presents the PyTorch code for **HComP-Net** (**H**ierarchy aligned **Com**monality through **P**rototypical **Net**works) 
+# HComP-Net: Hierarchy-aligned Commonality through Prototypical Networks
+[**Project Page**](https://imageomics.github.io/HComPNet/)  |  [**ArXIV**](https://arxiv.org/abs/2409.02335) 
 
-[Project Page](https://imageomics.github.io/HComPNet/)
+This repository presents the PyTorch code for the paper [What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits.](https://arxiv.org/abs/2409.02335))
+
 
 **HComP-Net** is an hierarchical interpretable image classification framework that can be applied to discover potential evolutionary traits from images by making use of the Phylogenetic tree also called as Tree-Of-Life. HComPNet generates hypothesis for potential evolutionary traits by learning semantically meaningful non-over-specific prototypes at each internal node of the hierarchy.
 
