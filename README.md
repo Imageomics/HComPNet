@@ -2,7 +2,7 @@
 
 [**Project Page**](https://imageomics.github.io/HComPNet/)  |  [**ArXiv**](https://arxiv.org/abs/2409.02335) 
 
-This repository presents the PyTorch code for the paper [What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits.](https://arxiv.org/abs/2409.02335))
+This repository presents the PyTorch code for the paper [What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits.](https://arxiv.org/abs/2409.02335)
 
 
 
