@@ -1,11 +1,12 @@
 # HComP-Net: Hierarchy aligned Commonality through Prototypical Networks
-This repository presents the PyTorch code for **HComP-Net** (**H**ierarchy aligned **Com**monality through **P**rototypical **Net**works) 
 
-[Project Page](https://imageomics.github.io/HComPNet/)
+[[**Project Page**](https://imageomics.github.io/HComPNet/)]  |  [[**Paper**](https://arxiv.org/abs/2409.02335)]
+
+This repository presents the PyTorch code for the paper [What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits.](https://arxiv.org/abs/2409.02335)
+
+
 
 **HComP-Net** is an hierarchical interpretable image classification framework that can be applied to discover potential evolutionary traits from images by making use of the Phylogenetic tree also called as Tree-Of-Life. HComPNet generates hypothesis for potential evolutionary traits by learning semantically meaningful non-over-specific prototypes at each internal node of the hierarchy.
-
-**Paper: What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits**
 
 > ***Abstract:*** 
 >> *A grand challenge in biology is to discover evolutionary traits, which are features of organisms common to a group of species with a shared ancestor in the Tree of Life (also referred to as phylogenetic tree). With the growing availability of large-scale image repositories in biology and recent advances in the field of explainable ML such as ProtoPNet and other prototype-based methods, there is a tremendous opportunity to discover evolutionary traits directly from images in the form of a hierarchy of prototypes learned at internal nodes of the phylogenetic tree. However, current prototype-based methods are mostly designed to operate over a flat structure of classes and face several challenges in discovering hierarchical prototypes on a tree, including the problem of learning over-specific features at internal nodes in the tree. To overcome these challenges, we introduce the framework of **H**ierarchy aligned **Com**monality through **P**rototypical **Net**works (**HComP-Net**), which learns common features shared by all descendant species of an internal node and avoids the learning of over-specific prototypes. We empirically show that HComP-Net learns prototypes that are accurate and semantically consistent in comparison to baselines on 190 species of birds from the CUB-200-2011 dataset. We also show the ability of HComP-Net to generate novel hypotheses about evolutionary traits discovered for butterflies and fishes. While we focus on the biological problem of discovering evolutionary traits, our work can be applied to any domain involving a hierarchy of classes.*
