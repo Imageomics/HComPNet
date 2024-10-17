@@ -34,7 +34,7 @@ cymem==2.0.8
 datasets==2.14.6
 debugpy==1.8.0
 decorator==5.1.1
-deepspeed==0.12.2
+deepspeed==0.15.1
 defusedxml==0.7.1
 DendroPy==4.6.1
 dill==0.3.7
