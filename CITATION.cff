@@ -2,7 +2,7 @@ abstract: "A grand challenge in biology is to discover evolutionary traits - fea
 authors:
 - family-names: Manogaran
   given-names: Harish Babu
-cff-version: 1.0.0
+cff-version: 1.2.0
 date-released: "2024-09-04"
 keywords:
   - "Prototypical networks"
@@ -13,7 +13,7 @@ keywords:
   - CV
   - biology
   - images
-  
+#doi:
 license: MIT
 message: "If you find this software helpful in your research, please cite both the software and our paper."
 repository-code: "https://github.com/Imageomics/HComPNet"
@@ -21,7 +21,7 @@ title: "HComP-Net"
 version: 1.0.0
 type: software
 preferred-citation:
-  type: article
+  type: conference-paper
   authors:
     - family-names: Manogaran
       given-names: Harish Babu
@@ -49,8 +49,8 @@ preferred-citation:
       given-names: Hilmar
     - family-names: Karpatne
       given-names: Anuj
-
+  booktitle: "Proceedings of the 2025 International Conference on Representation Learning (ICLR)"
+  pages: 45722--45758
   title: "What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits"
-  year: 2024
-  journal: 
-  doi: 
+  year: 2025
+  url: "https://proceedings.iclr.cc/paper_files/paper/2025/file/7132143ea6ec311a5fbefbdf83b26584-Paper-Conference.pdf"
