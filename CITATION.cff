@@ -49,7 +49,10 @@ preferred-citation:
       given-names: Hilmar
     - family-names: Karpatne
       given-names: Anuj
-  booktitle: "Proceedings of the 2025 International Conference on Representation Learning (ICLR)"
+  collection-title: "Proceedings of the 2025 International Conference on Representation Learning (ICLR)"
+  collection-type: proceedings
+  conference:
+    name: "ICLR 2025"
   pages: 45722--45758
   title: "What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits"
   year: 2025
