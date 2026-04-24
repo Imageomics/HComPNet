@@ -53,7 +53,7 @@ preferred-citation:
   collection-type: proceedings
   conference:
     name: "ICLR 2025"
-  pages: 45722--45758
+  pages: 45722-45758
   title: "What Do You See in Common? Learning Hierarchical Prototypes over Tree-of-Life to Discover Evolutionary Traits"
   year: 2025
   url: "https://proceedings.iclr.cc/paper_files/paper/2025/file/7132143ea6ec311a5fbefbdf83b26584-Paper-Conference.pdf"
