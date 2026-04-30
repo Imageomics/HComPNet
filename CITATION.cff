@@ -13,7 +13,7 @@ keywords:
   - CV
   - biology
   - images
-#doi:
+doi: 10.5281/zenodo.19830736
 license: MIT
 message: "If you find this software helpful in your research, please cite both the software and our paper."
 repository-code: "https://github.com/Imageomics/HComPNet"
