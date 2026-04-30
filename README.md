@@ -1,4 +1,7 @@
 # HComP-Net: Hierarchy aligned Commonality through Prototypical Networks [ICLR'25]
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19830736.svg)](https://doi.org/10.5281/zenodo.19830736)
+
 This repository presents the PyTorch code for **HComP-Net** (**H**ierarchy aligned **Com**monality through **P**rototypical **Net**works) 
 
 [Paper](https://arxiv.org/abs/2409.02335) | [Project Page](https://imageomics.github.io/HComPNet/)
